@@ -10,9 +10,7 @@ from flask import Flask
 if __name__ == '__main__':
 
     # Load configuration from config.json
-    config = load(open('config.json', 'r'))
-    site_config = config['site_config']
-    url_prefix = config.pop('url_prefix')
+
 
     # Create the app
     app = Flask(__name__)
